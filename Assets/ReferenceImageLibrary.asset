@@ -25,7 +25,7 @@ MonoBehaviour:
       m_GuidHigh: 13338601501175768104
     m_Size: {x: 0, y: 0}
     m_SpecifySize: 0
-    m_Name: Bulbasaur
+    m_Name: CircuitSystem
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5237598979479730045
