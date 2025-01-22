@@ -19,7 +19,7 @@ public class HomeManager : MonoBehaviour
     public void OnScanButtonClicked()
     {
         Debug.Log("Scan Button Pressed");
-        SceneManager.LoadScene("ScanScene");
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void OnQuitButtonClicked()
