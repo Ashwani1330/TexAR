@@ -249,39 +249,76 @@ PrefabInstance:
     - {fileID: 661601099218370336, guid: b9a1557b1cf6dcd4b8ca558d9b7cc83b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4006502635482481721, guid: b9a1557b1cf6dcd4b8ca558d9b7cc83b,
+    - targetCorrespondingSourceObject: {fileID: 3518717268837436172, guid: b9a1557b1cf6dcd4b8ca558d9b7cc83b,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 157912374513237606}
+      addedObject: {fileID: 409006780969871330}
+    - targetCorrespondingSourceObject: {fileID: 3518717268837436172, guid: b9a1557b1cf6dcd4b8ca558d9b7cc83b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8871184340598973366}
   m_SourcePrefab: {fileID: 100100000, guid: b9a1557b1cf6dcd4b8ca558d9b7cc83b, type: 3}
---- !u!1 &5683917753679527204 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4006502635482481721, guid: b9a1557b1cf6dcd4b8ca558d9b7cc83b,
+--- !u!23 &1306713886529901653 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7735707125915872584, guid: b9a1557b1cf6dcd4b8ca558d9b7cc83b,
     type: 3}
   m_PrefabInstance: {fileID: 8752923990152132893}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &157912374513237606
+--- !u!1 &5308722827649987089 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3518717268837436172, guid: b9a1557b1cf6dcd4b8ca558d9b7cc83b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8752923990152132893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &409006780969871330
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5683917753679527204}
+  m_GameObject: {fileID: 5308722827649987089}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 813666b03b65349b7b201127f177acf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnSwitchMaterial: {fileID: 0}
-  OnBulbMaterial: {fileID: 0}
-  OffSwitchMaterial: {fileID: 0}
-  OffBulbMaterial: {fileID: 0}
-  switchRenderer: {fileID: 0}
-  bulbRenderer: {fileID: 0}
+  OnSwitchMaterial: {fileID: 2100000, guid: 711c6d97ac27f1a43bd18aedb82efa08, type: 2}
+  OnBulbMaterial: {fileID: 2100000, guid: e68517bf7cafaa645a3dab911b13279a, type: 2}
+  OffSwitchMaterial: {fileID: 2100000, guid: ef0ae227930ae8a428b3b94343266e47, type: 2}
+  OffBulbMaterial: {fileID: 2100000, guid: aab395fe5a293dc459c3ffd6e907c60f, type: 2}
+  switchRenderer: {fileID: 9016346438989698746}
+  bulbRenderer: {fileID: 1306713886529901653}
   On: 0
+--- !u!65 &8871184340598973366
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5308722827649987089}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.05373242, y: 0.020000001, z: 0.019999998}
+  m_Center: {x: 0.016866187, y: -0.0000000018626451, z: -1.1641532e-10}
 --- !u!4 &8799478476153767377 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 245066792627895500, guid: b9a1557b1cf6dcd4b8ca558d9b7cc83b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8752923990152132893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &9016346438989698746 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 313245015974735783, guid: b9a1557b1cf6dcd4b8ca558d9b7cc83b,
     type: 3}
   m_PrefabInstance: {fileID: 8752923990152132893}
   m_PrefabAsset: {fileID: 0}

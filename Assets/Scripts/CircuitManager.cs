@@ -2,57 +2,65 @@ using UnityEngine;
 
 public class CircuitManager : MonoBehaviour
 {
-    public Material OnSwitchMaterial; // The new material to assign to the object
+    public Material OnSwitchMaterial;
     public Material OnBulbMaterial;
     public Material OffSwitchMaterial;
     public Material OffBulbMaterial;
     public Renderer switchRenderer;
     public Renderer bulbRenderer;
     public bool On;
-    
+
+    private Camera arCamera;
+
+    void Start()
+    {
+        // Cache the AR camera reference
+        arCamera = Camera.main;
+    }
+
     void Update()
     {
-        // Detect touches or mouse clicks
+        // Handle touch input
         if (Input.touchCount > 0)
         {
-            Touch touch = Input.GetTouch(0); // Get the first touch
-            if (touch.phase == TouchPhase.Began) // Check if the touch just started
+            Touch touch = Input.GetTouch(0);
+
+            // Check for both Began and Ended phases to make it more responsive
+            if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Ended)
             {
-                Ray ray = Camera.main.ScreenPointToRay(touch.position);
+                Ray ray = arCamera.ScreenPointToRay(touch.position);
                 RaycastHit hit;
 
-                if (Physics.Raycast(ray, out hit)) // Perform a raycast to detect objects
+                // Use LayerMask.GetMask("Default") if your object is on the Default layer
+                if (Physics.Raycast(ray, out hit))
                 {
-                    if (hit.transform == transform) // Check if the switch was touched
+                    // Check if we hit this object's collider
+                    if (hit.collider.gameObject == gameObject)
                     {
-                        ChangeMaterial(); // Update materials based on the toggle
+                        ChangeMaterial();
                     }
                 }
             }
         }
     }
 
-    void OnMouseDown()
-    {
-        ChangeMaterial(); 
-    }
-
     void ChangeMaterial()
     {
-        Debug.Log("Clicked");
-        // Change materials based on the On state
+        // Toggle the state first
+        On = !On;
+
+        Debug.Log($"Switch state changed to: {On}");
+
+        // Apply materials based on current state
         if (On)
         {
             bulbRenderer.material = OnBulbMaterial;
             switchRenderer.material = OnSwitchMaterial;
-            transform.eulerAngles = new Vector3(0, 0, 90);
         }
         else
         {
             bulbRenderer.material = OffBulbMaterial;
             switchRenderer.material = OffSwitchMaterial;
-            transform.eulerAngles = new Vector3(0, 180, 90);
         }
-        On = !On;
     }
 }
