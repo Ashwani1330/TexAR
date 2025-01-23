@@ -262,7 +262,7 @@ MonoBehaviour:
   imageManager: {fileID: 780515586}
   arObjects:
   - {fileID: 5835087792046453883, guid: 94571973d5c70844f95f6c6ecb629c4e, type: 3}
-  - {fileID: 9200045170228747948, guid: a83698bd62da18d4f88162c072f5f916, type: 3}
+  - {fileID: 5835087792046453883, guid: 3aeffd03f9aee4d4284a5c13a66a19ea, type: 3}
   - {fileID: 9200045170228747948, guid: fa35758edde66c74c9ef7d5bf3725b1d, type: 3}
 --- !u!114 &780515586
 MonoBehaviour:
