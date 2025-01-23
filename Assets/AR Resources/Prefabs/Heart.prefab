@@ -1593,7 +1593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1065809464561560968}
   m_Layer: 0
-  m_Name: Squirtle
+  m_Name: Heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
