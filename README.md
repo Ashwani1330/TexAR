@@ -3,6 +3,12 @@
 
 An innovative Unity-based augmented reality application that brings NCERT books to life. Using images from NCERT textbooks as markers, this app spawns interactive 3D models or prefabs, allowing students to learn concepts in a more engaging and immersive way.  
 
+## Screenshots
+
+![Heart](https://github.com/user-attachments/assets/6242b073-798c-4b04-a80c-5f3f4dd18c64)
+![neuron](https://github.com/user-attachments/assets/900e1a14-8660-46d7-9556-fcfef438d8fa)
+
+
 ## 🎯 Features  
 - **Image Tracking:** Detect and track specific pages or diagrams in NCERT books using ARFoundation.  
 - **Prefab Interaction:** Spawn 3D models, animations, or interactive elements mapped to the detected images.  
@@ -15,9 +21,6 @@ An innovative Unity-based augmented reality application that brings NCERT books 
 -  **Blender:** 3D Models.   
 - **ARFoundation:** For cross-platform AR development (compatible with ARKit and ARCore).  
 
-## 🚀 How It Works  
-#todo
-
 
 ## 🖥️ Setup Instructions  
 
@@ -29,8 +32,8 @@ An innovative Unity-based augmented reality application that brings NCERT books 
 ### Steps to Run  
 1. **Clone the Repository:**  
    ```bash  
-   git clone //todo
-   cd //todo
+   git clone https://github.com/ISTE-VIT/TextBookAR.git
+   cd TextBookAR
    ```  
 
 2. **Open in Unity:**  
