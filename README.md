@@ -1,4 +1,4 @@
-# TextBookAR-Hackwars
+# TexAR
  Gamified AR Educational Platform built on Unity
 
 An innovative Unity-based augmented reality application that brings NCERT books to life. Using images from NCERT textbooks as markers, this app spawns interactive 3D models or prefabs, allowing students to learn concepts in a more engaging and immersive way.  
@@ -32,8 +32,8 @@ An innovative Unity-based augmented reality application that brings NCERT books 
 ### Steps to Run  
 1. **Clone the Repository:**  
    ```bash  
-   git clone https://github.com/ISTE-VIT/TextBookAR.git
-   cd TextBookAR
+   git clone https://github.com/ISTE-VIT/TexAR.git
+   cd TexAR
    ```  
 
 2. **Open in Unity:**  
