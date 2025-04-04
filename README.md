@@ -53,7 +53,51 @@ An innovative Unity-based augmented reality application that brings NCERT books 
 ## 🎨 Contributing  
 Contributions are welcome!  
 - Found a bug? Open an issue. 
-- Have a feature request? Feel free to fork the repository and create a pull request.  
+- Have a feature request? Feel free to fork the repository and create a pull request.
 
-## 📜 License  
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.  
+  ## ⚙️ Implementation Status
+
+<table>
+  <tr>
+    <th>Component</th>
+    <th>Status</th>
+    <th>Details</th>
+  </tr>
+  <tr>
+    <td>Base App</td>
+    <td>✅ Complete</td>
+    <td>Implemented UI in Unity</td>
+  </tr>
+   <tr>
+    <td>Integration of 3D object prefabs</td>
+    <td>✅ Complete</td>
+    <td>Pipeline for modular integration of 3D models</td>
+  </tr>
+  <tr>
+    <td>Spawning of Objects mapped to visual tokens</td>
+    <td>✅ Complete</td>
+    <td>Objects spawn whenever the token is visible</td>
+  </tr>
+  <tr>
+    <td>User Score</td>
+    <td>🔄 In Progress</td>
+    <td>Points rewarded for every object found</td>
+  </tr>
+  <tr>
+    <td>Streak System</td>
+    <td>🔄 In Progress</td>
+    <td>Card registration and payment processing</td>
+  </tr>
+</table>
+
+
+### Contributors
+
+- [Ashwani Kumar Moudgil](https://github.com/Ashwani1330)
+- [Raghav Sharma](https://github.com/rs0125)
+- [Rajan Hasija](https://github.com/rajan0810)
+- [Bhargav R](https://github.com/Bhargs24)
+
+---
+
+<h4 align="center">Made with ❤️ by ISTE VIT </h4>
